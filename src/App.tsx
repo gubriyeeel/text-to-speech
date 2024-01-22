@@ -149,7 +149,7 @@ function App() {
               <Slider
                 min={0}
                 max={1}
-                step={.1}
+                step={0.1}
                 onValueChange={(value) => setVolume(value[0])}
                 defaultValue={[volume]}
               />
@@ -176,6 +176,28 @@ function App() {
             </div>
           </CardContent>
         </Card>
+      </div>
+      <div className="mt-4 flex flex-col text-center">
+        <span className="text-sm text-foreground">@gubriyeeel</span>
+        <div className="flex gap-4 text-center">
+          <a
+            href="https://github.com/gubriyeeel"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Github
+          </a>
+          <i>·</i>
+          <a
+            href="https://www.facebook.com/gubriyeeel/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Facebook
+          </a>
+        </div>
       </div>
     </main>
   );
