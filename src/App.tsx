@@ -94,8 +94,12 @@ function App() {
       <div className="flex flex-col gap-4 max-w-[640px] w-full">
         <Card className="w-full">
           <CardHeader>
-            <CardTitle>Speakaloud 🔊</CardTitle>
-            <CardDescription>Text-to-speech</CardDescription>
+            <CardTitle>
+              <h1>Speakaloud 🔊</h1>
+            </CardTitle>
+            <CardDescription>
+              <h2>Text-to-speech</h2>
+            </CardDescription>
           </CardHeader>
           <CardContent className="flex flex-col items-start gap-2">
             <Textarea id="text" onChange={(e) => setText(e.target.value)} />
