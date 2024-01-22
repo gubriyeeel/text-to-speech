@@ -113,6 +113,7 @@ function App() {
                   startSpeaking();
                 }}
                 variant={"default"}
+                disabled={isSpeaking}
               >
                 Speak
               </Button>
@@ -129,7 +130,10 @@ function App() {
             </div>
           </CardHeader>
           <CardContent className="flex flex-col items-start gap-4">
-            <Select onValueChange={(value) => setVoice(value)}>
+            <Select
+              onValueChange={(value) => setVoice(value)}
+              disabled={isSpeaking}
+            >
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Select a voice" />
               </SelectTrigger>
@@ -152,6 +156,7 @@ function App() {
                 step={0.1}
                 onValueChange={(value) => setVolume(value[0])}
                 defaultValue={[volume]}
+                disabled={isSpeaking}
               />
             </div>
             <div className="flex flex-col gap-2 w-full">
@@ -162,6 +167,7 @@ function App() {
                 step={0.1}
                 onValueChange={(value) => setPitch(value[0])}
                 defaultValue={[pitch]}
+                disabled={isSpeaking}
               />
             </div>
             <div className="flex flex-col gap-2 w-full">
@@ -172,6 +178,7 @@ function App() {
                 step={0.1}
                 onValueChange={(value) => setRate(value[0])}
                 defaultValue={[rate]}
+                disabled={isSpeaking}
               />
             </div>
           </CardContent>
