@@ -75,13 +75,6 @@ function App() {
     speech.pitch = pitch;
     speech.volume = volume;
 
-    console.log("text", text)
-    console.log("rate", rate);
-    console.log("voice", voice);
-    console.log("pitch", pitch);
-    console.log("vol", volume);
-
-
     speech.onend = () => {
       setIsSpeaking(false);
     };
