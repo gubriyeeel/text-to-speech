@@ -52,7 +52,7 @@ function App() {
 
         setVoices(voices);
       } catch (error) {
-        console.error("VOICESERROR:", error);
+        console.error("VOICES ERROR:", error);
       }
     };
 
