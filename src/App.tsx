@@ -94,7 +94,7 @@ function App() {
       <div className="flex flex-col gap-4 max-w-[640px] w-full">
         <Card className="w-full">
           <CardHeader>
-            <CardTitle>Readaloud 🔊</CardTitle>
+            <CardTitle>Speakaloud 🔊</CardTitle>
             <CardDescription>Text-to-speech</CardDescription>
           </CardHeader>
           <CardContent className="flex flex-col items-start gap-2">
@@ -114,7 +114,7 @@ function App() {
                 }}
                 variant={"default"}
               >
-                Read
+                Speak
               </Button>
             </div>
           </CardContent>
